@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final js</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="headerSt">
+        <div class="nav-div">
+            <a class="name-head animate__animated animate__heartBeat" href="index.html">Maryen</a>
+            <nav class="navigation" id="navBar">
+                <ul class="ul-nav">
+                    <li><a class="a-class-header" href="index.html">Home</a></li>
+                    <li><a class="a-class-header" href="#">About me</a></li>
+                    <li><a class="a-class-header" href="#">Portfolio</a></li>
+                    <li><a class="a-class-header" href="#">Services</a></li>
+                </ul>
+            </nav>
+            <div class="log-sign">
+                <div class="log-in">
+                    <P>Log in</P>
+                </div>
+                <div class="sing-up">
+                    <P>Sing up</P>
+                </div>
+            </div>
+            <div class="burger-icon" id="burgerBar">
+              <span></span>
+            </div>
+               
+            </div>
+        </header>
+            <section  class="wraper-form-sign">
+                <div class="form-wraper-login">
+                 <h2 class="title-form">Log in</h2>
+                <form class="login" action="" id="LOGIN">
+                <div>
+                  <input type="text" id="usernamefield" placeholder="username..">
+                  <input type="checkbox" id="savedInfo">
+                </div>
+                <div>
+                  <input type="password" id="usernamePassw" placeholder="enter your passw..">
+                </div>
+                <button class="submitbtn"  type="submit">Log in</button>
+               </form>
+            </div>
+            <div class="form-wraper">
+                <h2 class="title-form">Sign up</h2>
+            <form action="" id="form-el" method="POST">
+              <div >
+                <input class="input-size"
+                  type="text"
+                  name="usernamefield"
+                  id="username"
+                  placeholder="Name.."
+                />
+                <p class="error-text" id="error_usernamefield"></p>
+              </div>
+              <div>
+                <input class="input-size"
+                  type="password"
+                  name="passwordfield"
+                  id="password"
+                  placeholder="Password.."
+                />
+                <i class="fa-solid fa-eye" id="icon-passw"></i>
+                <p class="error-text" id="error_passwordfield"></p>
+              </div>
+              <div>
+                <input 
+                 type="email"
+                  placeholder="Email.." 
+                  id="emailField">
+                <p id="erorEmail"></p>
+              </div>
+              <div>
+                <input 
+                  type="password"
+                  name="passwordfield2"
+                  id="password2"
+                  placeholder="Repeat Password.."
+                />
+                <p class="error-text" id="error_passwordfield2"></p>
+              </div>
+              <div>
+                <input type="radio" name="gender" id="malegender" />
+                <label for="">Male</label>
+                <input type="radio" name="gender" id="femalegender" />
+                <label for="">Female</label>
+                <p class="error-text" id="error_gender"></p>
+              </div>
+              <div>
+                <input type="checkbox" name="agree" id="check" />
+                <label for="check">I agree terms and conditions</label>
+                <p class="error-text" id="error_agree"></p>
+              </div>
+              <button class="submit" type="submit">Submit</button>
+            </form>
+          </div>
+          </section>
+
+          
+         <!-- xmlserver -->
+         <section >
+            <div id="post-wraper" class="postwraper"></div>
+         </section>
+         <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
+         <script src="js/burger.js"></script>
+         <script src="js/form.js"></script>
+         <script src="js/server.js"></script>
+    <!-- <script type="module" src="js/script.js"></script> -->
+</body>
+</html>
