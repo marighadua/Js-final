@@ -58,6 +58,9 @@ body {
     font-weight: 400;
     font-style: normal;  
 }
+.a-class-header.none {
+    display: none;
+}
 .a-class-header::after {
     content: "";
     height: 3px;
@@ -414,7 +417,7 @@ body {
 }
 .nimate__animated.animate__jello {
     -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+            animation-duration: 1s inherit;
 }
 
 .projects {
@@ -440,7 +443,8 @@ body {
     place-content:center;
 }
 .title-sec5 {
-    font-size: 22px;
+    color: white;
+    font-size: 25px;
     font-family: "Tagesschrift", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -1119,6 +1123,10 @@ body {
 }
 }
 @media (max-width: 480px)  {
+    .a-class-header.none {
+        display: block;
+
+    }
     .log-sign {
         display: none;
     }
